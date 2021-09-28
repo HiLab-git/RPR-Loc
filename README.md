@@ -25,10 +25,13 @@ the data format should be like:
 |   .
 |   .
 ```
+The name of data division folder should be train/valid/test while the folder name of each volume could be arbitrary.
 ## Preprocess
 The preprocess contains two stage:
 1. Resample: use `data_process/Resample_data.py`
 2. Normalization: use `data_process/Normalize_data.py`
 ## Training
-Use `train/train_position.py`.
-The config is in `config`, containing 4 files for coarse/fine & pancreas/head and neck dataset.
+Use `train/train_position.py`.  
+The config file is in `config`, containing 4 files for coarse/fine & pancreas/head and neck dataset.  
+You can choose anyone by changing the `config_file` in line 173 of `train.py`.
+
